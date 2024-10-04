@@ -1,96 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
-<!--    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
-<!--    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
-<!--    <link rel="manifest" href="/site.webmanifest">-->
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Image-gallery API</title>
+    <title>Image Gallery</title>
 </head>
 <body>
 <header>
-    <div class="wrapper">
+    <div class="main-wrapper">
         <div class="header">
-            <img src="./img/camera.png" class="camera" alt="camera">
-            <h1>Image-gallery API</h1>
+            <img src="img/camera.png" class="logo" alt="camera">
+            <h1 class="main-title">Image-gallery API</h1>
         </div>
         <div class="form">
             <form>
                 <label>
-                    <input type="text" placeholder="Search...">
+                    <input class="search" type="text" placeholder="Search...">
                 </label>
-                <ion-icon name="search-outline" class="icon search-icon"></ion-icon>
-                <ion-icon name="close-outline" class="icon clear-icon"></ion-icon>
+                <i class="bi bi-search icon search" aria-hidden="true"></i>
+                <i class="bi bi-x icon clear" aria-hidden="true"></i>
             </form>
         </div>
     </div>
 </header>
 <main>
     <div class="gallery">
-        <!--        <div class="item">-->
-        <!--            <img src="img/1.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/2.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/3.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/4.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/5.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/6.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/7.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/8.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/1.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/2.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/3.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/4.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/5.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/6.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/7.jpg">-->
-        <!--        </div>-->
-        <!--        <div class="item">-->
-        <!--            <img src="img/8.jpg">-->
-        <!--        </div>-->
     </div>
 </main>
 <footer class="footer">
-<!--    <a class="link" href="https://rs.school/js-stage0/" target="_blank"><i>RS School</i></a>-->
-    <p><i>@2023</i></p>
-    <a class="link" href="https://github.com/Stebeniev" target="_blank"><i>Dmitriy</i></a>
+    <!--    <a class="link" href="https://rs.school/courses/javascript-preschool-ru" target="_blank"><i>RS School</i></a>-->
+    <p><i> created @2024 by Dmitriy</i></p>
+    <!--    <a class="link" href="https://github.com/Stebeniev" target="_blank"><i>Dmitriy</i></a>-->
 </footer>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="js.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
