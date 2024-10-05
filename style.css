@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fuggles', sans-serif;
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000000;
+    color: yellowgreen;
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+}
+
+.main-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+.main-title {
+    margin-left: 10px;
+    margin-top: 12px;
+    font-size: 38px;
+}
+
+.form {
+    margin-right: 20px;
+    padding-top: 15px;
+    position: relative;
+    /*cursor: pointer;*/
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    outline: none;
+}
+.header img:hover {
+    box-shadow:0 0 20px 3px rgb(94, 229, 17);
+}
+.form input:focus {
+    box-shadow:0 0 20px 3px rgb(94, 229, 17);
+}
+
+form i {
+    font-size: 18px;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+form i:hover {
+    color: yellowgreen;
+}
+
+.clear {
+    cursor: pointer;
+    color: black;
+    font-size: 29px;
+    right: 6px;
+    top: 19px;
+}
+
+.search {
+    display: block;
+}
+
+.clear {
+    display: none;
+}
+
+.icon {
+    cursor: pointer;
+    color: black;
+}
+
+img {
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 20px;
+    grid-gap: 10px;
+    margin-left: 8px;
+    margin-bottom: 50px;
+}
+
+.item {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s ease box-shadow;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px 3px #00000042;
+}
+
+.footer {
+    position: fixed;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.link {
+    font-family: 'Fuggles', sans-serif;
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 25px;
+}
+
+.footer p {
+    font-size: 30px;
+    color: yellowgreen;
+}
